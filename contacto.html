@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon-96x96.png">
+    <title>PadelMania página de contacto</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a title="padelManiaLogo" href="index.html">
+                <img src="assets/img/Logo.png" height="200" alt="padelManiaLogo">
+            </a>
+
+        </div>
+        <div>
+            <h2>PADELMANIA</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+    </header>
+    <hr>
+
+    <h2>CONTACTO</h2>
+    <form>
+        <p>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="¿Cuál es tu nombre?"
+                pattern="[A-Z, a-z, 0-9]{1,30}" />
+        </p>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="¿Cuál es tu Email?" />
+        </p>
+        <p>
+            <label for="edad">Edad: </label>
+            <input type="number" placeholder="¿Cuál es tu edad?" max="99" min="18" id="edad" />
+        </p>
+        <p>
+            <label for="fono">Teléfono: </label>
+            <input type="tel" name="fono" id="fono" placeholder="¿Cuál es tu teléfono?" pattern="[0-9]{9}" />
+        </p>
+        <p>
+            <label for="textoConsulta">Escribe tu consulta: </label>
+            <br>
+            <textarea name="textoConsulta" id="textoConsulta" placeholder="¿Cuál es tu consulta?" cols="30"
+                rows="10"></textarea>
+        </p>
+        <p>
+            <label for="privacidad">Política de privacidad</label>
+            <input type="checkbox" name="privacidad" id="privacidad" />
+        </p>
+        <input type="submit" name="Confirmar" value="Confirmar" />
+    </form>
+    <aside>
+        <h3><a href="padelmania:info@padelmania.com">Envíanos un correo</a> o sí prefieres llamanos al número <a href="tel:+34665665665">665665665</a></h3>
+    </aside>
+    <hr>
+    <footer>
+        <div>
+            <h3>Redes sociales</h3>
+            <img src="assets/img/twitter.png" alt="twitter" height="100">
+            <img src="assets/img/fb.png" alt="fb" height="100">
+            <img src="assets/img/whatsapp.png" alt="whatsapp" height="100">
+        </div>
+        <div>
+            <h3>Metodos de pago</h3>
+            <img src="assets/img/visa.png" alt="visa" height="75">
+            <img src="assets/img/mastercard.png" alt="mastercard" height="75">
+            <img src="assets/img/paypal.png" alt="paypal" height="75">
+        </div>
+    </footer>
+</body>
+
+</html>
