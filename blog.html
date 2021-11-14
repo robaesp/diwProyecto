@@ -1,125 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="assets/css/imprimir.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon-96x96.png">
+    <link href="assets/css/all.css" rel="stylesheet">
     <title>Noticias de pádel y trucos para mejorar en PadelMania</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <a title="padelManiaLogo" href="index.html">
-                <img src="assets/img/Logo.png" height="200" alt="padelManiaLogo">
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="assets/img/padelmanialogo2.png" alt="padelManiaLogo">
             </a>
+            <div class="formYLupa">
+                <form class="bloqueForm">
+                    <input placeholder="No busques no hay nada">
+                </form>
+                <a class="lupa" title="lupa">
+                    <i class="fas fa-search" alt="lupa"></i>
+                </a>
+            </div>
+            <div class="navCategorias">
+                <ul>
+                    <li><a href="index.html">
+                            INICIO
+                        </a></li>
+                    <li><a href="servicios.html">
+                            SERVICIOS
+                        </a></li>
+                    <li><a href="blog.html">
+                            BLOG
+                        </a></li>
+                    <li><a href="contacto.html">
+                            CONTACTO
+                        </a></li>
+                    <li><a title="globo" class="navGlobo" href="contacto.html">
+                            <i class="fas fa-globe" alt="globo"></i>
+                        </a></li>
+                    <li><a title="carrito" class="navCarrito" href="contacto.html">
+                            <i class="fas fa-shopping-cart" alt="carrito"></i>
+                        </a></li>
+                </ul>
+            </div>
 
-        </div>
-        <div>
-            <h2>PADELMANIA</h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-
+        </nav>
     </header>
-    <hr>
-    <h2>BLOG</h2>
-    <main>
-        <section>
-            <article id="articulo1">
-                <h2>Elementos esenciales para un partido</h2>
-                <ol>
-                    <li>Pista</li>
-                    <li>Red</li>
-                    <li>Calzado adecuado</li>
-                    <li>Pala</li>
-                    <li>Bolas de pádel</li>
-                    <li>Bebida refrescante</li>
-                    <li>Luces o farolas</li>
-                    <li>Accesorios</li>
-                </ol>
-                <div>
-                    <img src="assets/img/pista.jpg" alt="pistaPadel" height="300">
-                </div>
-            </article>
-            <article id="articulo2">
-                <h2>TODAS LAS NOVEDADES DE LA WPT</h2>
-                <p>LA <strong>WPT</strong> <q>lorem ipsum dolor sit amet consectetur </q>adipisicing eult. Debitis nisi
-                    rem
-                    nobis, dolorum qui accusamus at
-                    quod odit quaerat aulas odio, similique tenetur atque autem sint placeat obcaecati veritatis minima.
-                </p>
-                <div>
-                    <img src="assets/img/wpt.jpg" alt="nox" height="300">
-                </div>
-                <p><i>Lorem ipsum, <b>folor</b>d sit amet consectetur adipisicing elit.</i> Quia eveniet, minima
-                    voluptate voluptatum
-                    obcaecati voluptatem iure quod at, error commodi animi quo, fuga esse eius iusto quasi nulla dolorum
-                    dolore. <u>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</u> Exercitationem nobis
-                    voluptates
-                    commodi earum animi facere minima saepe, quisquam quam beatae accusantium officia veritatis
-                    architecto est natus eligendi aliquid atque voluptate.</p>
-            </article>
-            <article id="articulo3">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quasi tenetur illum necessitatibus
-                    at consequuntur rerum repudiandae perferendis rem ad atque in, reiciendis dolorem exercitationem
-                    tempora fugiat excepturi, quisquam eaque.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, consequatur officia dicta,
-                    necessitatibus perspiciatis vitae provident corrupti, earum aliquam beatae libero eos doloremque
-                    sequi? Aliquid esse non nesciunt eum. Expedita.
-                </p>
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154214.5103364689!2d-0.5427351669515812!3d38.35795447718404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante+(Alacant)%2C+Alicante%2C+Espa%C3%B1a!5e1!3m2!1ses!2sus!4v1564299065614!5m2!1ses!2sus"
-                        width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe><br>
-                </div>
-            </article>
-            <article id="articulo4">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quasi tenetur illum necessitatibus
-                    at consequuntur rerum repudiandae perferendis rem ad atque in, reiciendis dolorem exercitationem
-                    tempora fugiat excepturi, quisquam eaque.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, consequatur officia dicta,
-                    necessitatibus perspiciatis vitae provident corrupti, earum aliquam beatae libero eos doloremque
-                    sequi? Aliquid esse non nesciunt eum. Expedita.
-                </p>
-                <div>
-                    <iframe width="400" height="200" src="https://www.youtube.com/watch?v=TNHdjIuD7HQ" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe><br>
-                </div>
-            </article>
-        </section>
-        <aside>
+
+    <main class="mainBlog">
+        <aside class="aside">
             <h3>TAMBIÉN TE PODRÍA INTERESAR...</h3>
             <ul>
-
                 <li><a href="#articulo1">Cosas esenciales para un partido</a></li>
                 <li><a href="#articulo2">Novedades de octubre en la WPT</a></li>
                 <li><a href="#articulo3">Nuestro lugar</a></li>
-                <li><a href="#articulo4"><u>Vídeo: Trucos de saque</u></a></li>
-
+                <li><a href="#articulo4">Vídeo: Trucos de saque</a></li>
             </ul>
         </aside>
+        <section class="section">
+            <article class="articuloPrincipal">
+                <img src="assets/img/pista.jpg" alt="pistaPadel" />
+                <div class="articuloPrincipalTexto">
+                    <h2>Elementos esenciales para un partido</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eligendi possimus ullam mollitia
+                        velit, voluptatibus eos distinctio? Quibusdam voluptate veritatis perferendis perspiciatis odio,
+                        similique nesciunt minima temporibus est velit aliquam.
+                        Laboriosam temporibus harum necessitatibus velit ex? Consequatur nobis sed aliquam eaque magnam
+                        ratione, exercitationem eligendi, asperiores nostrum voluptas velit hic. Maiores voluptatibus
+                        excepturi praesentium nobis sequi ad voluptates, sunt labore.
+                        Possimus quaerat aspernatur ab iste maxime animi, pariatur libero cumque! Voluptatem at maiores
+                        eaque unde, ex molestias laboriosam dicta necessitatibus perferendis voluptas laborum eos?
+                        Voluptas cupiditate dolore eius officiis magnam.
+                        Tenetur laboriosam optio ab rerum non at! Fuga porro iusto molestias quisquam nihil rerum
+                        praesentium autem et obcaecati, quis officia. Assumenda repellendus in inventore ipsam ducimus
+                        perferendis veniam sit nobis!</p>
+                </div>
+                <div class="centradoTexto">
+                </div>
+            </article>
+        </section>
+
+        <section class="section2">
+            <div class="entradas">
+                <div>Entrada 1</div>
+                <div>Entrada 2</div>
+                <div>Entrada 3</div>
+            </div>
+
+            <!-- <article class="articulo">
+                <iframe width="400" height="200" src="https://www.youtube.com/watch?v=TNHdjIuD7HQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe><br>
+            </article> -->
+        </section>
     </main>
-    <hr>
     <footer>
-        <div>
-            <h3>Redes sociales</h3>
-            <img src="assets/img/twitter.png" alt="twitter" height="100">
-            <img src="assets/img/fb.png" alt="fb" height="100">
-            <img src="assets/img/whatsapp.png" alt="whatsapp" height="100">
+        <div class="infFooter">
+            <h3>Sobre nosotros</h3>
+            <p>Teléfono de contacto: +34 615869547</p>
+            <p>Dirección: C/ Unjuta Politu 3/A</p>
+            <p>Política de Privacidad y de Cookies </p>
         </div>
-        <div>
-            <h3>Metodos de pago</h3>
-            <img src="assets/img/visa.png" alt="visa" height="75">
-            <img src="assets/img/mastercard.png" alt="mastercard" height="75">
-            <img src="assets/img/paypal.png" alt="paypal" height="75">
+        <div class="RRSS">
+            <h3>Redes sociales</h3>
+            <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/666666666"><i class="fab fa-whatsapp" id="whatsIcon"></i></a>
+        </div>
+        <div class="metodosPago">
+            <h3>Métodos de pago</h3>
+            <a href="http://visa.es"><i class="fab fa-cc-visa"></i></a>
+            <a href="http://mastercard.es"><i class="fab fa-cc-mastercard"></i></a>
+            <a href="http://paypal.com"><i class="fab fa-cc-paypal"></i></a>
         </div>
     </footer>
 </body>

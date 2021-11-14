@@ -1,84 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="assets/css/imprimir.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon-96x96.png">
+    <link href="assets/css/all.css" rel="stylesheet">
     <title>PadelMania página de contacto</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <a title="padelManiaLogo" href="index.html">
-                <img src="assets/img/Logo.png" height="200" alt="padelManiaLogo">
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="assets/img/padelmanialogo2.png" alt="padelManiaLogo" >
             </a>
-
-        </div>
-        <div>
-            <h2>PADELMANIA</h2>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-
+            <div class="formYLupa">
+                <form class="bloqueForm">
+                    <input placeholder="No busques no hay nada">
+                </form>
+                <a class="lupa" title="lupa">
+                    <i class="fas fa-search" alt="lupa"></i>
+                </a>
+            </div>
+            <div class="navCategorias">
+                <ul>
+                    <li><a href="index.html">
+                            INICIO
+                        </a></li>
+                    <li><a href="servicios.html">
+                            SERVICIOS
+                        </a></li>
+                    <li><a href="blog.html">
+                            BLOG
+                        </a></li>
+                    <li><a href="contacto.html">
+                            CONTACTO
+                        </a></li>
+                    <li><a title="globo" class="navGlobo" href="contacto.html">
+                            <i class="fas fa-globe" alt="globo"></i>
+                        </a></li>
+                    <li><a title="carrito" class="navCarrito" href="contacto.html">
+                            <i class="fas fa-shopping-cart" alt="carrito"></i>
+                        </a></li>
+                </ul>
+            </div>
+            
+        </nav>
     </header>
-    <hr>
-
-    <h2>CONTACTO</h2>
-    <form>
-        <p>
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="¿Cuál es tu nombre?"
-                pattern="[A-Z, a-z, 0-9]{1,30}" />
-        </p>
-        <p>
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="¿Cuál es tu Email?" />
-        </p>
-        <p>
-            <label for="edad">Edad: </label>
-            <input type="number" placeholder="¿Cuál es tu edad?" max="99" min="18" id="edad" />
-        </p>
-        <p>
-            <label for="fono">Teléfono: </label>
-            <input type="tel" name="fono" id="fono" placeholder="¿Cuál es tu teléfono?" pattern="[0-9]{9}" />
-        </p>
-        <p>
-            <label for="textoConsulta">Escribe tu consulta: </label>
-            <br>
-            <textarea name="textoConsulta" id="textoConsulta" placeholder="¿Cuál es tu consulta?" cols="30"
-                rows="10"></textarea>
-        </p>
-        <p>
-            <label for="privacidad">Política de privacidad</label>
-            <input type="checkbox" name="privacidad" id="privacidad" />
-        </p>
-        <input type="submit" name="Confirmar" value="Confirmar" />
+    <main class="mainContacto">
+        <h1>CONTACTO</h1>
+        <form class="formC">
+            <fieldset class="fieldset">
+                <div class="subtitulo">
+                <h2 class="fs-title">Crea tu cuenta</h2>
+            </div>
+                <input type="text" name="nombre" placeholder="Nombre" />
+                <input type="text" name="email" placeholder="Email" />
+                <input type="number" name="tlf" placeholder="NºTeléfono"/>
+                <input type="password" name="pass" placeholder="Password" />
+                <input type="password" name="cPass" placeholder="Confirma la contraseña" />
+                <input type="button" name="enviar" class="botonForm" value="Enviar" />
+              </fieldset>
     </form>
-    <aside>
-        <h3><a href="padelmania:info@padelmania.com">Envíanos un correo</a> o sí prefieres llamanos al número <a href="tel:+34665665665">665665665</a></h3>
-    </aside>
-    <hr>
-    <footer>
-        <div>
-            <h3>Redes sociales</h3>
-            <img src="assets/img/twitter.png" alt="twitter" height="100">
-            <img src="assets/img/fb.png" alt="fb" height="100">
-            <img src="assets/img/whatsapp.png" alt="whatsapp" height="100">
+    <div class="mapa">  
+        <article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d154214.5103364689!2d-0.5427351669515812!3d38.35795447718404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante+(Alacant)%2C+Alicante%2C+Espa%C3%B1a!5e1!3m2!1ses!2sus!4v1564299065614!5m2!1ses!2sus"
+                width="100%"  frameborder="0" style="border:0" allowfullscreen></iframe>
+        </article>
         </div>
-        <div>
-            <h3>Metodos de pago</h3>
-            <img src="assets/img/visa.png" alt="visa" height="75">
-            <img src="assets/img/mastercard.png" alt="mastercard" height="75">
-            <img src="assets/img/paypal.png" alt="paypal" height="75">
-        </div>
-    </footer>
+    </main>
+        <footer>
+            <div class="infFooter">
+                <h3>Sobre nosotros</h3>
+                <p>Teléfono de contacto: +34 615869547</p>
+                <p>Dirección: C/ Unjuta Politu 3/A</p>
+                <p>Política de Privacidad y de Cookies </p>
+            </div>
+            <div class="RRSS">
+                <h3>Redes sociales</h3>
+                <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/666666666"><i class="fab fa-whatsapp" id="whatsIcon"></i></a>
+            </div>
+            <div class="metodosPago">
+                <h3>Métodos de pago</h3>
+                <a href="http://visa.es"><i class="fab fa-cc-visa" ></i></a>
+                <a href="http://mastercard.es"><i class="fab fa-cc-mastercard"></i></a>
+                <a href="http://paypal.com"><i class="fab fa-cc-paypal"></i></a>
+            </div>
+        </footer>
 </body>
 
 </html>
