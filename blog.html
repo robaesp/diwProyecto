@@ -91,16 +91,65 @@
 
         <section class="section2">
             <div class="entradas">
-                <div>Entrada 1</div>
+                <div>Entrada 1
+                </div>
                 <div>Entrada 2</div>
                 <div>Entrada 3</div>
             </div>
-
+            <div class="video"><video controls>
+                    <source src="./assets/media/playa.mp4">
+                    <source src="./assets/media/playa.ogg">
+                    <source src="./assets/media/playa.webm">
+                </video>
+            </div>
+            <div class="audio">
+                <audio controls>
+                    <source src="assets/media/ambient-00023.mp3">
+                    <source src="assets/media/ambiente.ogg">
+                </audio>
+            </div>
+            <h2>Control de vídeo</h2>
+            <video id="medio" width="720" height="400">
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+                <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
+            </video>
+            <nav>
+                <input type="button" id="reiniciar" value="reiniciar">
+                <input type="button" id="retrasar" value="&laquo;">
+                <input type="button" id="play" value="&#9658;">
+                <input type="button" id="adelantar" value="&raquo;">
+                <input type="button" id="silenciar" value="silenciar">
+                <label>Volumen</label>
+                <input type="button" id="menosVolumen" value="-">
+                <input type="button" id="masVolumen" value="+">
+            </nav>
+            <script src="./assets/js/video.js"></script>
             <!-- <article class="articulo">
                 <iframe width="400" height="200" src="https://www.youtube.com/watch?v=TNHdjIuD7HQ" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe><br>
             </article> -->
+            <h2>Control de audio</h2>
+            <button id="btn0" onclick="audio.play();">Pulsa aquí</button>
+            <button id="btn1" onclick="audio1.play();">Pulsa aquí</button>
+            <button id="btn2" onclick="audio2.play();">Pulsa aquí</button>
+            <button id="btn3" onclick="audio3.play();">Pulsa aquí</button>
+            <script src="./assets/js/audio.js"></script>
+            <p class="textoAnimado">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <canvas id="miCanvas" width="550" height="300">
+                Tu navegador no soporta canvas.
+            </canvas>
+            <script src="./assets/js/canvas.js"></script>
+            <br>
+            <canvas id="juegoCanvas" width="550" height="300">
+                Tu navegador no soporta canvas.
+            </canvas>
+            <script src="./assets/js/juegocanvas.js"></script>
         </section>
     </main>
     <footer>

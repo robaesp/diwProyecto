@@ -343,6 +343,40 @@ h3{
       width:100%;  
       font-family: 'Source Sans Pro', sans-serif;
   }
+  .video>video{
+      width: 300px;
+      height: 200px;
+  }
+
+  #btn0,#btn1,#btn2,#btn3{
+      width: 100px;
+      height: 60px;
+      background-color: white;
+      font-size:14px;
+      color:blue;
+      border-radius: 20px;
+      border-width: 4px;
+  }
+
+  .textoAnimado
+    {
+        animation-duration: 6s;
+        animation-name: animadoTexto;
+        margin: 20px;
+      }
+      
+      @keyframes animadoTexto {
+        from {
+          margin-left: 100%;
+          width: 100%;
+        }
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+      
+  
  /* ---------------------SERVICIOS------------------------------ */
 caption{
     font-family: 'Source Sans Pro', sans-serif;
