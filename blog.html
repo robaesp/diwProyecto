@@ -14,8 +14,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon-96x96.png">
     <link href="assets/css/all.css" rel="stylesheet">
     <title>Noticias de pádel y trucos para mejorar en PadelMania</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-
+<script src="assets/js/Act4.js"></script>
 <body>
     <header>
         <nav>
@@ -60,10 +61,10 @@
         <aside class="aside">
             <h3>TAMBIÉN TE PODRÍA INTERESAR...</h3>
             <ul>
-                <li><a href="#articulo1">Cosas esenciales para un partido</a></li>
-                <li><a href="#articulo2">Novedades de octubre en la WPT</a></li>
-                <li><a href="#articulo3">Nuestro lugar</a></li>
-                <li><a href="#articulo4">Vídeo: Trucos de saque</a></li>
+                <li><a href="#articulo1" id="art1">Cosas esenciales para un partido</a></li>
+                <li><a href="#articulo2" id="art2">Novedades de octubre en la WPT</a></li>
+                <li><a href="#articulo3" id="art3">Nuestro lugar</a></li>
+                <li><a href="#articulo4" id="art4">Vídeo: Trucos de saque</a></li>
             </ul>
         </aside>
         <section class="section">
@@ -91,8 +92,7 @@
 
         <section class="section2">
             <div class="entradas">
-                <div>Entrada 1
-                </div>
+                <div>Entrada 1</div>
                 <div>Entrada 2</div>
                 <div>Entrada 3</div>
             </div>
@@ -108,7 +108,7 @@
                     <source src="assets/media/ambiente.ogg">
                 </audio>
             </div>
-            <h2>Control de vídeo</h2>
+            <h2 id="medios">Control de vídeo</h2>
             <video id="medio" width="720" height="400">
                 <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
                 <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
@@ -151,6 +151,7 @@
             </canvas>
             <script src="./assets/js/juegocanvas.js"></script>
         </section>
+        <a id="toTop" href="#"><i class="fas fa-arrow-up"></i></a>
     </main>
     <footer>
         <div class="infFooter">
@@ -172,6 +173,7 @@
             <a href="http://paypal.com"><i class="fab fa-cc-paypal"></i></a>
         </div>
     </footer>
+    
 </body>
 
 </html>
